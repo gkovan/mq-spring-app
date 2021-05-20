@@ -1,0 +1,15 @@
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/SimpleFilterTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/health/HealthEndpointTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/HttpRequestWrapperTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/ResettableHttpServletRequestComponentTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/swagger/SwaggerDocketTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/LoggingFilterTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/ResettableHttpServletRequestTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/outbound/LoggingInterceptorTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/ClientHttpResponseWrapperTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/swagger/SwaggerConfigTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/ResponseLoggingContextTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/RequestResponseLoggerImplTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/mqclient/controller/MQClientControllerTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/inbound/ReaderHelperTest.java
+/Users/gkovan@us.ibm.com/Documents/GitHub/prod-ref-deployment/cloud-native-toolkit-gitorg/mq-spring-app/src/test/java/com/ibm/cloud_garage/logging/RequestLoggingContextTest.java

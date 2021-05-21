@@ -61,13 +61,6 @@ management:
 
 server:
   port: ${PORT:8080}
-#  ssl:
-#    enabled: false
-#    key-store: ${CLIENT_SSL_KEY_STORE:default}
-#    key-store-password: ${KEY_STORE_PASSWORD:passw0rd}
-#    trust-store: ${CLIENT_SSL_TRUST_STORE:default}
-#    trust-store-password: ${KEY_STORE_PASSWORD:passw0rd}
-#    client-auth: need  
 
 logging:
   level:

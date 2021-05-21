@@ -1,7 +1,7 @@
 package com.ibm.mqclient.controller;
 
-import java.util.Map;
 
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.web.bind.annotation.GetMapping;

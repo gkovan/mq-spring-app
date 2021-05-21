@@ -23,8 +23,14 @@ ibm:
     user: ${USER}
     password: ${PASSWORD}
     application-name: ${APP_NAME:springboot-app}
+    sslCipherSuite: "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384"
+    
 
 app:
+  keystore: ${CLIENT_SSL_KEY_STORE:default}
+  keystore-pw: ${KEY_STORE_PASSWORD:passw0rd}
+  truststore: ${CLIENT_SSL_TRUST_STORE:default}
+  truststore-pw: ${KEY_STORE_PASSWORD:passw0rd}
   mq:
    queue-name: ${QUEUE_NAME:DEVGK}    
 
@@ -55,13 +61,20 @@ management:
 
 server:
   port: ${PORT:8080}
+#  ssl:
+#    enabled: false
+#    key-store: ${CLIENT_SSL_KEY_STORE:default}
+#    key-store-password: ${KEY_STORE_PASSWORD:passw0rd}
+#    trust-store: ${CLIENT_SSL_TRUST_STORE:default}
+#    trust-store-password: ${KEY_STORE_PASSWORD:passw0rd}
+#    client-auth: need  
 
 logging:
   level:
     ROOT: ${LOG_LEVEL:INFO}
     com.ibm.hello: DEBUG
     com.ibm.cloud_garage: DEBUG
-    com.ibm.mqclient: INFO
+    com.ibm.mqclient: DEBUG
     org.springframework: ERROR
     org.springframework.web: WARN
     org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

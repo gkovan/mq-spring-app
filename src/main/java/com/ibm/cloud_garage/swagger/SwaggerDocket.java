@@ -36,7 +36,7 @@ public class SwaggerDocket {
     }
 
     protected Predicate<RequestHandler> buildApiRequestHandler() {
-        if (!StringUtils.isEmpty(config.getBaseApiPackage())) {
+        if (!StringUtils.hasLength(config.getBaseApiPackage())) {
             return buildBasePackageRequestHandler(config.getBaseApiPackage());
         }
 

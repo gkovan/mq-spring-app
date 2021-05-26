@@ -34,20 +34,16 @@ app:
   mq:
    queue-name: ${QUEUE_NAME:DEVGK}    
 
-hello:
-  pattern: "Hello there, %s!"
-
-greetingservice:
-  beanName: "hola"
-
 swagger:
-  baseApiPackage:
-  - "com.ibm.hello"
-  - "com.ibm.health"
+  baseApiPackage: "com.ibm.mqclient"
   title: "${IMAGE_NAME:mq-spring-app}"
   description: "Spring Boot client application that exposes REST api's to put and get messages onto an MQ queue.'"
   version: "1.0.0"
   termsOfServiceUrl: ""
+  contact: 
+    name: "Gerry Kovan" 
+    url: ""
+    email: "gkovan@us.ibm.com"
 
   license: "MIT"
   licenseUrl: ""
@@ -65,7 +61,6 @@ server:
 logging:
   level:
     ROOT: ${LOG_LEVEL:INFO}
-    com.ibm.hello: DEBUG
     com.ibm.cloud_garage: DEBUG
     com.ibm.mqclient: DEBUG
     org.springframework: ERROR

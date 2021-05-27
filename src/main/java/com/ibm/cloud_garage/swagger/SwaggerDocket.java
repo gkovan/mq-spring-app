@@ -32,6 +32,7 @@ public class SwaggerDocket {
                 .apis(buildApiRequestHandler())
                 .paths(PathSelectors.regex(".*/api/.*"))
                 .build()
+                .useDefaultResponseMessages(false)
                 .apiInfo(buildApiInfo());
     }
 

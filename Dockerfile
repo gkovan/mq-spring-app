@@ -23,6 +23,7 @@ RUN dnf install -y java-11-openjdk.x86_64
 
 COPY --from=builder /workspace/app/target/*.jar ./app.jar
 
-EXPOSE 9080/tcp
+EXPOSE 8080/tcp
+USER 1001
 
 CMD ["java", "-jar", "./app.jar"]

@@ -27,7 +27,7 @@ public class RequestResponseLoggerImpl implements RequestResponseLogger {
         if (logger.isInfoEnabled()) {
 
             try {
-                logger.info("{}", beautifyContextString(new RequestLoggingContext()
+                logger.debug("{}", beautifyContextString(new RequestLoggingContext()
                         .withUrl(Optional
                                 .ofNullable(request.getURI())
                                 .map(URI::toString)

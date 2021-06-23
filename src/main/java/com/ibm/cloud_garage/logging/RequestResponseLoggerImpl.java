@@ -24,7 +24,7 @@ public class RequestResponseLoggerImpl implements RequestResponseLogger {
     @Override
     public void traceRequest(HttpRequest request, byte[] body) {
 
-        if (logger.isInfoEnabled()) {
+        if (logger.isDebugEnabled()) {
 
             try {
                 logger.debug("{}", beautifyContextString(new RequestLoggingContext()

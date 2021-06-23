@@ -121,8 +121,10 @@ spec:
             - secretRef:
                 name: {{ default "jaeger-access" .Values.jaegerSecretName }}
                 optional: true
+            {{- if eq .Values.security true }}     
             - secretRef:
-                name: {{ .Values.certs.certPasswordSecretName }}                 
+                name: {{ .Values.certs.certPasswordSecretName }} 
+            {{- end }}                      
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

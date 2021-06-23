@@ -94,6 +94,7 @@ spec:
                 configMapKeyRef:
                   key: CONNECTION_NAME
                   name: {{ include "mq-spring-app.fullname" . }}
+            {{- if eq .Values.security true }}                   
             - name: USER
               valueFrom:
                 secretKeyRef:
@@ -104,6 +105,7 @@ spec:
                 secretKeyRef:
                   key: PASSWORD
                   name: {{ include "mq-spring-app.fullname" . }}
+            {{- end }}       
             - name: QUEUE_NAME
               valueFrom:
                 configMapKeyRef:

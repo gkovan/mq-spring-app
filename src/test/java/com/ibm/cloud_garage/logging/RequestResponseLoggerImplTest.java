@@ -93,7 +93,7 @@ public class RequestResponseLoggerImplTest {
 
             classUnderTest.traceRequest(request, bodyBytes);
 
-            verify(loggerMock).info("{}", contextString);
+            verify(loggerMock).debug("{}", contextString);
         }
 
         @Test

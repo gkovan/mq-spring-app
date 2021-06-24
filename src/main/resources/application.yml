@@ -61,7 +61,7 @@ server:
 
 logging:
   level:
-    ROOT: ${LOG_LEVEL:DEBUG}
+    ROOT: ${LOG_LEVEL:INFO}
     com.ibm.cloud_garage: INFO
     com.ibm.mqclient: DEBUG
     org.springframework: ERROR

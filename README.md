@@ -116,6 +116,24 @@ For more details on how to use this Starter Kit Template please review the [IBM 
 * Learn more about augmenting your Java applications on IBM Cloud with the [Java Programming Guide](https://cloud.ibm.com/docs/java?topic=java-getting-started).
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
+
+## Local setup - no security
+
+### client app
+
+To start the spring boot client app
+```
+./mvnw spring-boot:run -Dspring-boot.run.jvmArguments="-DCONNECTION_NAME='localhost(1414)' -DCHANNEL=DEV.APP.SVRCONN -DQM=QM1 -DQUEUE_NAME='DEV.QUEUE.1' -DUSER=app -DPASSWORD=passw0rd
+```
+
+### MQ 
+
+docker run --env LICENSE=accept --env MQ_QMGR_NAME=QM1 --volume qm1data:/mnt/mqm --publish 1414:1414 --publish 9443:9443 --detach --env MQ_APP_PASSWORD=passw0rd ibmcom/mq:latest
+
+Also need to manually create the queue DEV.QUEUE.q , channel DEV.APP.SVRCON and also disable CHLAUTH .
+
+## Local setup with security
+
 ## License
 
 This sample application is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).

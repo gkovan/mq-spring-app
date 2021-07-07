@@ -53,7 +53,7 @@ runtime: spring
 
 configmap:
   CHANNEL: IBM.APP.SVRCONN
-  CONNECTION_NAME: qm-dev-ibm-mq.dev.svc.cluster.local(1414)
+  CONNECTION_NAME: quickstart-cp4i-gk-test-ibm-mq.tools.svc.cluster.local(1414)
   QM: QM1
   QUEUE_NAME: IBM.DEMO.Q
   APP_NAME: MQ-SPRING-APP
@@ -71,4 +71,4 @@ certs:
   trustStoreFileName: truststore.jks
   keyStoreFileName: keystore.jks
 
-security: true
+security: false
